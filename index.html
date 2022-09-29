@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'd': '1440px',
+                },
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @font-face {
+            font-family: 'KumbhSans';
+            font-weight: 700;
+            src: url("fonts/KumbhSans-Bold.ttf");
+        }
+
+        @font-face {
+            font-family: 'KumbhSans';
+            font-weight: 400;
+            src: url("fonts/KumbhSans-Regular.ttf");
+        }
+
+        body {
+            font-family: 'KumbhSans';
+            font-size: 18px;
+        }
+    </style>
+
+    <style>
+        .attribution {
+            display: none;
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+<body class="bg-[#19a2ae] flex items-center justify-center h-screen w-screen relative overflow-hidden">
+<img class="absolute -top-[178px] -left-[173px] d:-left-[290px] d:-top-[500px] z-[-1]" src="images/bg-pattern-top.svg" alt="top">
+<img class="absolute -bottom-[178px] -right-[173px] z-[-1] d:-right-[230px] d:-bottom-[630px]" src="images/bg-pattern-bottom.svg" alt="bottom">
+<div class="bg-white h-[370px] w-[325px] rounded-[15px] shadow-xl">
+    <div class="h-[140px] w-full">
+        <img class="rounded-t-[15px] h-full object-cover" src="images/bg-pattern-card.svg" alt="background">
+    </div>
+    <div class="w-full -mt-[55px] flex justify-center">
+        <img class="rounded-full border-[5px] border-white" src="images/image-victor.jpg" alt="victor">
+    </div>
+    <div class="flex flex-col items-center mt-[17px]">
+        <div class="space-x-2">
+            <span class="font-bold">Victor Crest</span>
+            <span>26</span>
+        </div>
+        <span class="mt-[7px] text-[14px]">London</span>
+    </div>
+    <hr class="mt-5">
+    <div class="mt-[24px] w-full flex px-[50px] space-x-[40px]">
+        <div class="flex flex-col items-center">
+            <span class="font-bold">80K</span>
+            <span class="tracking-wider text-[10px]">Followers</span>
+        </div>
+        <div class="flex flex-col items-center">
+            <div class="font-bold">803K</div>
+            <div class="tracking-wider text-[10px]">Likes</div>
+        </div>
+        <div class="flex flex-col items-center">
+            <div class="font-bold">1.4K</div>
+            <div class="tracking-wider text-[10px]">Photos</div>
+        </div>
+    </div>
+</div>
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+</div>
+</body>
+</html>
